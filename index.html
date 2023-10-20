@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        #header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        #heart-container {
+            position: relative;
+            animation: heartbeat 2s infinite linear;
+        }
+
+        #heart {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: heartbeat 2s infinite linear;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #borregito {
+            width: 150px;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Te Quiero Mucho Gerardo</div>
+    <div id="heart-container">
+        <div id="heart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red">
+                <path d="M12 21.35l-1.45-1.32C5.4 16.18 2 13.39 2 10.5 2 7.42 4.42 5 7.5 5c1.74 0 3.41.81 4.5 2.09C13.09 5.81 14.76 5 16.5 5 19.58 5 22 7.42 22 10.5c0 2.89-3.4 5.68-8.55 9.54L12 21.35z"/>
+            </svg>
+        </div>
+    </div>
+    <img id="borregito" src="img/borregito.png" alt="Borregito">
+</body>
+</html>
